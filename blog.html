@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
 
@@ -7,18 +7,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- Google Fonts - Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <!-- bootstrap grid css -->
     <link rel="stylesheet" href="css/plugins/bootstrap-grid.css">
     <!-- font awesome css -->
     <link rel="stylesheet" href="css/plugins/font-awesome-fixed.css">
+    <!-- Font Awesome 6 for more icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <!-- swiper css -->
     <link rel="stylesheet" href="css/plugins/swiper.min.css">
     <!-- fancybox css -->
     <link rel="stylesheet" href="css/plugins/fancybox.min.css">
     <!-- ashley scss -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Custom XR Human Styles -->
+    <style>
+        :root {
+            --xr-blue-primary: #2BA5DE;
+            --xr-blue-light: #8CD7F2;
+            --xr-blue-lightest: #E6F5FC;
+            --xr-dark: #222222;
+            --xr-orange: #FF4500;
+            --xr-gray: #D6D6CF;
+        }
+    
+        * {
+            font-family: 'Manrope', sans-serif !important;
+        }
+    
+        .xr-gradient-bg {
+            background: linear-gradient(90deg, #7BC3E8 0%, #A4D3F0 25%, #C8E5F7 50%, #E8F4FD 75%, #F5FBFF 100%);
+        }
+    
+        .xr-accent-color {
+            color: var(--xr-blue-primary) !important;
+        }
+    
+        .xr-orange-accent {
+            color: var(--xr-orange) !important;
+        }
+    
+        .mil-button {
+            background-color: var(--xr-orange) !important;
+            border-color: var(--xr-orange) !important;
+        }
+    
+        .mil-button:hover {
+            background-color: var(--xr-blue-primary) !important;
+            border-color: var(--xr-blue-primary) !important;
+        }
+    
+        .mil-energy {
+            color: var(--xr-blue-primary) !important;
+        }
+    
+        .xr-icon {
+            width: 48px;
+            height: 48px;
+            background-color: var(--xr-blue-primary);
+            border-radius: 12px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--xr-blue-lightest);
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    
+        .xr-gradient-text {
+            background: none !important;
+            color: #000 !important;
+        }
+    
+        .mil-soft-bg {
+            background: linear-gradient(135deg, var(--xr-blue-lightest) 0%, var(--xr-gray) 100%) !important;
+        }
+    
+        .mil-label.mil-accent {
+            background-color: var(--xr-blue-primary) !important;
+            color: white !important;
+        }
+    </style>
     <!-- page name -->
-    <title>Ashley</title>
+    <title>XR Human - Insights & Innovation</title>
 
 </head>
 
@@ -45,12 +121,17 @@
                 <div class="mil-pos-abs mil-animation-1">
                     <p class="mil-h3 mil-muted mil-thin">Pioneering</p>
                     <p class="mil-h3 mil-muted">Creative</p>
-                    <p class="mil-h3 mil-muted mil-thin">Excellence</p>
+                    <p class="mil-h3 mil-muted mil-thin">XR Realities</p>
+                    <div class="mil-dots">
+                        <div class="mil-dot"></div>
+                        <div class="mil-dot"></div>
+                        <div class="mil-dot"></div>
+                    </div>
                 </div>
                 <div class="mil-pos-abs mil-animation-2">
                     <div class="mil-reveal-frame">
                         <p class="mil-reveal-box"></p>
-                        <p class="mil-h3 mil-muted mil-thin">ashley.com</p>
+                        <p class="mil-h3 mil-muted">XR Human</p>
                     </div>
                 </div>
             </div>
@@ -67,7 +148,7 @@
         <div class="mil-menu-frame">
             <!-- frame clone -->
             <div class="mil-frame-top">
-                <a href="home-1.html" class="mil-logo">A.</a>
+                <a href="home-1.html" class="mil-logo">XR Human</a>
                 <div class="mil-menu-btn">
                     <span></span>
                 </div>
@@ -81,9 +162,9 @@
                             <nav class="mil-main-menu" id="swupMenu">
                                 <ul>
                                     <li class="mil-has-children">
-                                        <a href="#.">Homepage</a>
+                                        <a href="#.">Home</a>
                                         <ul>
-                                            <li><a href="home-1.html">Landing page</a></li>
+                                            <li><a href="home-1.html">Main</a></li>
                                             <li><a href="home-2.html">Personal</a></li>
                                             <li><a href="portfolio-3.html">Portfolio slider</a></li>
                                         </ul>
@@ -91,27 +172,27 @@
                                     <li class="mil-has-children">
                                         <a href="#.">Portfolio</a>
                                         <ul>
-                                            <li><a href="portfolio-1.html">Grid type 1</a></li>
-                                            <li><a href="portfolio-2.html">Grid type 2</a></li>
-                                            <li><a href="portfolio-3.html">Slider</a></li>
+                                            <li><a href="portfolio-1.html">VR Experiences</a></li>
+                                            <li><a href="portfolio-2.html">AR Solutions</a></li>
+                                            <li><a href="portfolio-3.html">Mixed Reality</a></li>
                                         </ul>
                                     </li>
                                     <li class="mil-has-children">
                                         <a href="#.">Services</a>
                                         <ul>
-                                            <li><a href="services.html">Services List</a></li>
-                                            <li><a href="service.html">Single service</a></li>
+                                            <li><a href="services.html">XR Development</a></li>
+                                            <li><a href="service.html">Consulting</a></li>
                                         </ul>
                                     </li>
                                     <li class="mil-has-children mil-active">
-                                        <a href="#.">Newsletter</a>
+                                        <a href="#.">Resources</a>
                                         <ul>
-                                            <li><a href="blog.html">Blog List</a></li>
-                                            <li><a href="publication.html">Publication</a></li>
+                                            <li><a href="blog.html">Blog</a></li>
+                                            <li><a href="publication.html">Guides</a></li>
                                         </ul>
                                     </li>
                                     <li class="mil-has-children">
-                                        <a href="#.">Other pages</a>
+                                        <a href="#.">About</a>
                                         <ul>
                                             <li><a href="team.html">Team</a></li>
                                             <li><a href="contact.html">Contact</a></li>
@@ -134,27 +215,27 @@
                                     <div class="row">
                                         <div class="col-lg-8 mil-mb-60">
 
-                                            <h6 class="mil-muted mil-mb-30">Projects</h6>
+                                            <h6 class="mil-muted mil-mb-30">Featured Projects</h6>
 
                                             <ul class="mil-menu-list">
-                                                <li><a href="project-1.html" class="mil-light-soft">Interior design studio</a></li>
-                                                <li><a href="project-2.html" class="mil-light-soft">Home Security Camera</a></li>
-                                                <li><a href="project-3.html" class="mil-light-soft">Kemia Honest Skincare</a></li>
-                                                <li><a href="project-4.html" class="mil-light-soft">Cascade of Lava</a></li>
-                                                <li><a href="project-5.html" class="mil-light-soft">Air Pro by Molekule</a></li>
-                                                <li><a href="project-6.html" class="mil-light-soft">Tony's Chocolonely</a></li>
+                                                <li><a href="project-1.html" class="mil-light-soft">Virtual Showroom Experience</a></li>
+                                                <li><a href="project-2.html" class="mil-light-soft">AR Training Platform</a></li>
+                                                <li><a href="project-3.html" class="mil-light-soft">Mixed Reality Collaboration</a></li>
+                                                <li><a href="project-4.html" class="mil-light-soft">VR Entertainment Hub</a></li>
+                                                <li><a href="project-5.html" class="mil-light-soft">AR Marketing Campaign</a></li>
+                                                <li><a href="project-6.html" class="mil-light-soft">VR Education Platform</a></li>
                                             </ul>
 
                                         </div>
                                         <div class="col-lg-4 mil-mb-60">
 
-                                            <h6 class="mil-muted mil-mb-30">Useful links</h6>
+                                            <h6 class="mil-muted mil-mb-30">Expertise</h6>
 
                                             <ul class="mil-menu-list">
-                                                <li><a href="#." class="mil-light-soft">Privacy Policy</a></li>
-                                                <li><a href="#." class="mil-light-soft">Terms and conditions</a></li>
-                                                <li><a href="#." class="mil-light-soft">Cookie Policy</a></li>
-                                                <li><a href="#." class="mil-light-soft">Careers</a></li>
+                                                <li><a href="#." class="mil-light-soft">Unity Development</a></li>
+                                                <li><a href="#." class="mil-light-soft">Unreal Engine</a></li>
+                                                <li><a href="#." class="mil-light-soft">WebXR</a></li>
+                                                <li><a href="#." class="mil-light-soft">3D Modeling</a></li>
                                             </ul>
 
                                         </div>
@@ -163,18 +244,17 @@
                                     <div class="row justify-content-between">
 
                                         <div class="col-lg-4 mil-mb-60">
-
-                                            <h6 class="mil-muted mil-mb-30">Canada</h6>
-
-                                            <p class="mil-light-soft mil-up">71 South Los Carneros Road, California <span class="mil-no-wrap">+51 174 705 812</span></p>
-
+                                            <h6 class="mil-muted mil-mb-30"
+                                                style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">Düsseldorf, Germany
+                                            </h6>
+                                            <p class="mil-light-soft mil-up"
+                                                style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">Königsallee 106,
+                                                40215 Düsseldorf <span class="mil-no-wrap">+49 211 123 4567</span></p>
                                         </div>
-                                        <div class="col-lg-4 mil-mb-60">
-
-                                            <h6 class="mil-muted mil-mb-30">Germany</h6>
-
-                                            <p class="mil-light-soft">Leehove 40, 2678 MC De Lier, Netherlands <span class="mil-no-wrap">+31 174 705 811</span></p>
-
+                                        <div class="col-lg-7 mil-mb-60">
+                                            <div class="mil-social-frame">
+                                                <!-- Social icons would go here if needed -->
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -194,7 +274,7 @@
         <!-- frame -->
         <div class="mil-frame">
             <div class="mil-frame-top">
-                <a href="home-1.html" class="mil-logo">A.</a>
+                <a href="home-1.html" class="mil-logo">XR Human</a>
                 <div class="mil-menu-btn">
                     <span></span>
                 </div>
@@ -215,23 +295,38 @@
             <div id="swupMain" class="mil-main-transition">
 
                 <!-- banner -->
-                <div class="mil-inner-banner mil-p-0-120">
-                    <div class="mil-banner-content mil-up">
+                <section class="mil-banner xr-gradient-bg mil-p-0-120">
+                    <div class="mi-invert-fix">
                         <div class="mil-animation-frame">
-                            <div class="mil-animation mil-position-4 mil-dark mil-scale" data-value-1="6" data-value-2="1.4"></div>
+                            <div class="mil-animation mil-position-1 mil-scale" data-value-1="7" data-value-2="1.6"></div>
+                            <div class="mil-animation mil-position-2 mil-scale" data-value-1="4" data-value-2="1"></div>
+                            <div class="mil-animation mil-position-3 mil-scale" data-value-1="1.2" data-value-2=".1"></div>
                         </div>
                         <div class="container">
-                            <ul class="mil-breadcrumbs mil-mb-60">
-                                <li><a href="home-1.html">Homepage</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                            </ul>
-                            <h1 class="mil-mb-60">Exploring <span class="mil-thin">the World</span> <br> Through Our <span class="mil-thin">Blog</span></h1>
-                            <a href="#blog" class="mil-link mil-dark mil-arrow-place mil-down-arrow">
-                                <span>Publications</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                            <div class="mil-banner-content mil-up">
+                                <!-- XR Icon -->
+                                <div class="row mil-mb-60">
+                                    <div class="col-12">
+                                        <div class="xr-icon">
+                                            <i class="fas fa-lightbulb"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="mil-breadcrumbs mil-mb-60">
+                                    <li><a href="home-1.html">Home</a></li>
+                                    <li><a href="blog.html">XR Insights</a></li>
+                                    </ul>
+                                <h1 class="mil-dark mil-mb-60">Extended Reality <span class="xr-gradient-text">Insights</span><br>& <span
+                                        class="xr-orange-accent">Innovation</span></h1>
+                                <p class="mil-dark mil-mb-60" style="color: var(--xr-dark) !important;">Explore the latest trends, insights, and
+                                    innovations in extended reality technology.</p>
+                                <a href="#blog" class="mil-link mil-dark mil-arrow-place mil-down-arrow">
+                                    <span>Latest Articles</span>
+                                    </a>
+                                    </div>
+                                    </div>
+                                    </div>
+                </section>
                 <!-- banner end -->
 
                 <!-- popular -->
@@ -239,12 +334,12 @@
                     <div class="container mil-p-120-60">
                         <div class="row align-items-center mil-mb-30">
                             <div class="col-lg-6 mil-mb-30">
-                                <h3 class="mil-up">Popular Publications:</h3>
+                                <h3 class="mil-up">Featured XR Articles</h3>
                             </div>
                             <div class="col-lg-6 mil-mb-30">
                                 <div class="mil-adaptive-right mil-up">
                                     <a href="blog-inner.html" class="mil-link mil-dark mil-arrow-place">
-                                        <span>View all</span>
+                                        <span>View all articles</span>
                                     </a>
                                 </div>
                             </div>
@@ -258,11 +353,12 @@
                                     </div>
                                     <div class="mil-post-descr">
                                         <div class="mil-labels mil-up mil-mb-30">
-                                            <div class="mil-label mil-upper mil-accent">TECHNOLOGY</div>
-                                            <div class="mil-label mil-upper">may 24 2023</div>
+                                            <div class="mil-label mil-upper mil-accent">VR DEVELOPMENT</div>
+                                            <div class="mil-label mil-upper">Oct 01 2025</div>
                                         </div>
-                                        <h4 class="mil-up mil-mb-30">How to Become a Graphic Designer in 10 Simple Steps</h4>
-                                        <p class="mil-post-text mil-up mil-mb-30">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae id ut at iure! Totam, a!</p>
+                                        <h4 class="mil-up mil-mb-30">Building Immersive VR Experiences: A Developer's Guide</h4>
+                                        <p class="mil-post-text mil-up mil-mb-30">Discover the essential techniques and best practices for creating compelling
+                                            virtual reality experiences that engage users and push the boundaries of digital interaction.</p>
                                         <div class="mil-link mil-dark mil-arrow-place mil-up">
                                             <span>Read more</span>
                                         </div>
@@ -278,11 +374,12 @@
                                     </div>
                                     <div class="mil-post-descr">
                                         <div class="mil-labels mil-up mil-mb-30">
-                                            <div class="mil-label mil-upper mil-accent">TECHNOLOGY</div>
-                                            <div class="mil-label mil-upper">may 24 2023</div>
+                                            <div class="mil-label mil-upper mil-accent">AR INNOVATION</div>
+                                            <div class="mil-label mil-upper">Sep 28 2025</div>
                                         </div>
-                                        <h4 class="mil-up mil-mb-30">16 Best Graphic Design Online and Offline Courses</h4>
-                                        <p class="mil-post-text mil-up mil-mb-30">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae id ut at iure! Totam, a!</p>
+                                        <h4 class="mil-up mil-mb-30">The Future of Augmented Reality in Enterprise</h4>
+                                        <p class="mil-post-text mil-up mil-mb-30">Explore how AR technology is transforming business operations, from remote
+                                            assistance to training programs, and what the future holds for enterprise applications.</p>
                                         <div class="mil-link mil-dark mil-arrow-place mil-up">
                                             <span>Read more</span>
                                         </div>
@@ -300,17 +397,16 @@
                     <div class="container mil-p-120-120">
                         <div class="row align-items-center mil-mb-30">
                             <div class="col-lg-4 mil-mb-30">
-                                <h3 class="mil-up">Categories:</h3>
+                                <h3 class="mil-up">XR Categories</h3>
                             </div>
                             <div class="col-lg-8 mil-mb-30">
                                 <div class="mil-adaptive-right mil-up">
-
                                     <ul class="mil-category-list">
-                                        <li><a href="blog-inner.html">Design</a></li>
-                                        <li><a href="blog-inner.html">Art</a></li>
-                                        <li><a href="blog-inner.html">Code</a></li>
-                                        <li><a href="blog-inner.html">Technology</a></li>
-                                        <li><a href="blog-inner.html" class="mil-active">All categories</a></li>
+                                        <li><a href="blog-inner.html">VR Development</a></li>
+                                        <li><a href="blog-inner.html">AR Innovation</a></li>
+                                        <li><a href="blog-inner.html">Mixed Reality</a></li>
+                                        <li><a href="blog-inner.html">XR Technology</a></li>
+                                        <li><a href="blog-inner.html" class="mil-active">All topics</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -324,11 +420,12 @@
                                     </div>
                                     <div class="mil-post-descr">
                                         <div class="mil-labels mil-up mil-mb-30">
-                                            <div class="mil-label mil-upper mil-accent">TECHNOLOGY</div>
-                                            <div class="mil-label mil-upper">may 24 2023</div>
+                                            <div class="mil-label mil-upper mil-accent">MIXED REALITY</div>
+                                            <div class="mil-label mil-upper">Sep 25 2025</div>
                                         </div>
-                                        <h4 class="mil-up mil-mb-30">How to Create a Brand Guide for Your Client</h4>
-                                        <p class="mil-post-text mil-up mil-mb-30">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae id ut at iure! Totam, a!</p>
+                                        <h4 class="mil-up mil-mb-30">WebXR: Bringing Extended Reality to the Browser</h4>
+                                        <p class="mil-post-text mil-up mil-mb-30">Learn how WebXR is revolutionizing accessibility to immersive experiences by
+                                            enabling VR and AR directly in web browsers without additional software installations.</p>
                                         <div class="mil-link mil-dark mil-arrow-place mil-up">
                                             <span>Read more</span>
                                         </div>
@@ -344,51 +441,12 @@
                                     </div>
                                     <div class="mil-post-descr">
                                         <div class="mil-labels mil-up mil-mb-30">
-                                            <div class="mil-label mil-upper mil-accent">TECHNOLOGY</div>
-                                            <div class="mil-label mil-upper">may 24 2023</div>
+                                            <div class="mil-label mil-upper mil-accent">XR TECHNOLOGY</div>
+                                            <div class="mil-label mil-upper">Sep 22 2025</div>
                                         </div>
-                                        <h4 class="mil-up mil-mb-30">Color Psychology in Art and Design</h4>
-                                        <p class="mil-post-text mil-up mil-mb-30">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae id ut at iure! Totam, a!</p>
-                                        <div class="mil-link mil-dark mil-arrow-place mil-up">
-                                            <span>Read more</span>
-                                        </div>
-                                    </div>
-                                </a>
-
-                            </div>
-                            <div class="col-lg-12">
-
-                                <a href="publication.html" class="mil-blog-card mil-blog-card-hori mil-more mil-mb-60">
-                                    <div class="mil-cover-frame mil-up">
-                                        <img src="img/blog/5.jpg" alt="cover">
-                                    </div>
-                                    <div class="mil-post-descr">
-                                        <div class="mil-labels mil-up mil-mb-30">
-                                            <div class="mil-label mil-upper mil-accent">TECHNOLOGY</div>
-                                            <div class="mil-label mil-upper">may 24 2023</div>
-                                        </div>
-                                        <h4 class="mil-up mil-mb-30">How to Design a Repeating Pattern</h4>
-                                        <p class="mil-post-text mil-up mil-mb-30">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae id ut at iure! Totam, a!</p>
-                                        <div class="mil-link mil-dark mil-arrow-place mil-up">
-                                            <span>Read more</span>
-                                        </div>
-                                    </div>
-                                </a>
-
-                            </div>
-                            <div class="col-lg-12">
-
-                                <a href="publication.html" class="mil-blog-card mil-blog-card-hori mil-more mil-mb-60">
-                                    <div class="mil-cover-frame mil-up">
-                                        <img src="img/blog/6.jpg" alt="cover">
-                                    </div>
-                                    <div class="mil-post-descr">
-                                        <div class="mil-labels mil-up mil-mb-30">
-                                            <div class="mil-label mil-upper mil-accent">TECHNOLOGY</div>
-                                            <div class="mil-label mil-upper">may 24 2023</div>
-                                        </div>
-                                        <h4 class="mil-up mil-mb-30">How to Never Reach Creative Burnout</h4>
-                                        <p class="mil-post-text mil-up mil-mb-30">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae id ut at iure! Totam, a!</p>
+                                        <h4 class="mil-up mil-mb-30">5G and XR: The Perfect Partnership for Immersive Experiences</h4>
+                                        <p class="mil-post-text mil-up mil-mb-30">Discover how 5G networks are enabling more sophisticated XR applications with
+                                            reduced latency and enhanced streaming capabilities for real-time immersive content.</p>
                                         <div class="mil-link mil-dark mil-arrow-place mil-up">
                                             <span>Read more</span>
                                         </div>
@@ -413,19 +471,20 @@
                 <!-- call to action -->
                 <section class="mil-soft-bg">
                     <div class="container mil-p-120-120">
-                        <div class="row">
-                            <div class="col-lg-10">
-
-                                <span class="mil-suptitle mil-suptitle-right mil-suptitle-dark mil-up">Looking to make your mark? We'll help you turn <br> your project into a success story.</span>
-
+                        <div class="row align-items-center">
+                            <div class="col-lg-2">
+                                <div class="xr-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
                             </div>
-                        </div>
-                        <div class="mil-center">
-                            <h2 class="mil-up mil-mb-60">Stay up-to-date <span class="mil-thin">with the</span><br> latest news by <span class="mil-thin">subscribing</span><br> to our <span class="mil-thin">newsletter!</span></h2>
-                            <div class="row justify-content-center mil-up">
-                                <div class="col-lg-4">
-                                    <form class="mil-subscribe-form mil-subscribe-form-2 mil-up">
-                                        <input type="text" placeholder="Enter our email">
+                            <div class="col-lg-7">
+                                <h2 class="mil-up mil-mb-60">Stay ahead in the <span class="xr-gradient-text">XR revolution</span><br>Subscribe to
+                                    our <span class="xr-orange-accent">insights</span></h2>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="mil-adaptive-right mil-up">
+                                    <form class="mil-subscribe-form">
+                                        <input type="text" placeholder="Enter your email">
                                         <button type="submit" class="mil-button mil-icon-button-sm mil-arrow-place"></button>
                                     </form>
                                 </div>
@@ -442,12 +501,12 @@
                             <div class="row justify-content-between">
                                 <div class="col-md-4 col-lg-4 mil-mb-60">
 
-                                    <div class="mil-muted mil-logo mil-up mil-mb-30">Ashley.</div>
+                                    <div class="mil-muted mil-logo mil-up mil-mb-30">XR Human</div>
 
-                                    <p class="mil-light-soft mil-up mil-mb-30">Subscribe our newsletter:</p>
+                                    <p class="mil-light-soft mil-up mil-mb-30">Subscribe to our newsletter for the latest XR insights:</p>
 
                                     <form class="mil-subscribe-form mil-up">
-                                        <input type="text" placeholder="Enter our email">
+                                        <input type="text" placeholder="Enter your email">
                                         <button type="submit" class="mil-button mil-icon-button-sm mil-arrow-place"></button>
                                     </form>
 
@@ -498,16 +557,16 @@
 
                                         <div class="col-md-6 col-lg-5 mil-mb-60">
 
-                                            <h6 class="mil-muted mil-up mil-mb-30">Canada</h6>
+                                            <h6 class="mil-muted mil-up mil-mb-30">Düsseldorf, Germany</h6>
 
-                                            <p class="mil-light-soft mil-up">71 South Los Carneros Road, California <span class="mil-no-wrap">+51 174 705 812</span></p>
+                                            <p class="mil-light-soft mil-up">XXXXX Düsseldorf <span class="mil-no-wrap">+49 XXXX</span></p>
 
                                         </div>
                                         <div class="col-md-6 col-lg-5 mil-mb-60">
 
-                                            <h6 class="mil-muted mil-up mil-mb-30">Germany</h6>
+                                            <h6 class="mil-muted mil-up mil-mb-30">Remote Services</h6>
 
-                                            <p class="mil-light-soft mil-up">Leehove 40, 2678 MC De Lier, Netherlands <span class="mil-no-wrap">+31 174 705 811</span></p>
+                                            <p class="mil-light-soft mil-up">Global XR solutions <span class="mil-no-wrap">hello@xrhuman.com</span></p>
 
                                         </div>
                                     </div>
@@ -518,13 +577,13 @@
                                     <div class="mil-vert-between">
                                         <div class="mil-mb-30">
                                             <ul class="mil-social-icons mil-up">
-                                                <li><a href="#." target="_blank" class="social-icon"> <i class="far fa-circle"></i></a></li>
-                                                <li><a href="#." target="_blank" class="social-icon"> <i class="far fa-circle"></i></a></li>
-                                                <li><a href="#." target="_blank" class="social-icon"> <i class="far fa-circle"></i></a></li>
-                                                <li><a href="#." target="_blank" class="social-icon"> <i class="far fa-circle"></i></a></li>
+                                                <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-behance"></i></a></li>
+                                                <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-dribbble"></i></a></li>
+                                                <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-github"></i></a></li>
                                             </ul>
                                         </div>
-                                        <p class="mil-light-soft mil-up">© Copyright 2023 - Mil. All Rights Reserved.</p>
+                                        <p class="mil-light-soft mil-up">© Copyright 2025 - XR Human. All Rights Reserved.</p>
                                     </div>
 
                                 </div>

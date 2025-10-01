@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
 
@@ -7,18 +7,167 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- Google Fonts - Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <!-- bootstrap grid css -->
     <link rel="stylesheet" href="css/plugins/bootstrap-grid.css">
     <!-- font awesome css -->
     <link rel="stylesheet" href="css/plugins/font-awesome-fixed.css">
+    <!-- Font Awesome 6 for more icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <!-- swiper css -->
     <link rel="stylesheet" href="css/plugins/swiper.min.css">
     <!-- fancybox css -->
     <link rel="stylesheet" href="css/plugins/fancybox.min.css">
     <!-- ashley scss -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Custom XR Human Styles -->
+    <style>
+        :root {
+            --xr-blue-primary: #2BA5DE;
+            --xr-blue-light: #8CD7F2;
+            --xr-blue-lightest: #E6F5FC;
+            --xr-dark: #222222;
+            --xr-orange: #FF4500;
+            --xr-gray: #D6D6CF;
+        }
+    
+        * {
+            font-family: 'Manrope', sans-serif !important;
+        }
+    
+        .xr-gradient-bg {
+            background: linear-gradient(90deg, #7BC3E8 0%, #A4D3F0 25%, #C8E5F7 50%, #E8F4FD 75%, #F5FBFF 100%);
+        }
+    
+        .xr-accent-color {
+            color: var(--xr-blue-primary) !important;
+        }
+    
+        .xr-orange-accent {
+            color: var(--xr-orange) !important;
+        }
+    
+        .mil-banner {
+            background: linear-gradient(90deg, #2BA5DE 0%, #8CD7F2 50%, #E6F5FC 100%);
+        }
+    
+        .mil-button {
+            background-color: var(--xr-orange) !important;
+            border-color: var(--xr-orange) !important;
+        }
+    
+        .mil-button:hover {
+            background-color: var(--xr-blue-primary) !important;
+            border-color: var(--xr-blue-primary) !important;
+        }
+    
+        .mil-energy {
+            color: var(--xr-blue-primary) !important;
+        }
+    
+        .xr-icon {
+            width: 48px;
+            height: 48px;
+            background-color: var(--xr-blue-primary);
+            border-radius: 12px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--xr-blue-lightest);
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    
+        .xr-service-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, var(--xr-blue-primary), var(--xr-blue-light));
+            border-radius: 16px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--xr-blue-lightest);
+            font-size: 28px;
+            margin-bottom: 24px;
+        }
+    
+        .xr-gradient-text {
+            background: none !important;
+            color: #000 !important;
+            -webkit-background-clip: initial !important;
+            -webkit-text-fill-color: initial !important;
+            background-clip: initial !important;
+        }
+    
+        /* VR Portfolio specific styles */
+        .mil-portfolio-item {
+            transition: all 0.3s ease;
+        }
+    
+        .mil-portfolio-item:hover {
+            transform: translateY(-10px);
+        }
+    
+        .mil-portfolio-item .mil-cover {
+            border-radius: 20px;
+            overflow: hidden;
+        }
+    
+        /* VR category labels */
+        .mil-label.mil-vr {
+            background: linear-gradient(45deg, var(--xr-blue-primary), var(--xr-blue-light));
+            color: white;
+        }
+    
+        .mil-label.mil-ar {
+            background: linear-gradient(45deg, var(--xr-orange), #FF7F50);
+            color: white;
+        }
+    
+        .mil-label.mil-mr {
+            background: linear-gradient(45deg, #8A2BE2, #9370DB);
+            color: white;
+        }
+    
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+    
+            .xr-icon,
+            .xr-service-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+            }
+    
+            .mil-banner h1 {
+                font-size: 2.5rem !important;
+            }
+        }
+    
+        /* Animation for icons */
+        .xr-icon,
+        .xr-service-icon {
+            transition: all 0.3s ease;
+        }
+    
+        .xr-icon:hover,
+        .xr-service-icon:hover {
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 10px 25px var(--xr-gray);
+        }
+    
+        /* Enhanced gradient backgrounds */
+        .mil-soft-bg {
+            background: linear-gradient(135deg, var(--xr-blue-lightest) 0%, var(--xr-gray) 100%) !important;
+        }
+    </style>
     <!-- page name -->
-    <title>Ashley</title>
+    <title>XR Human - Virtual Reality Portfolio</title>
 
 </head>
 
@@ -31,11 +180,11 @@
         <div class="mil-ball">
             <span class="mil-icon-1">
                 <svg viewBox="0 0 128 128">
-                    <path d="M106.1,41.9c-1.2-1.2-3.1-1.2-4.2,0c-1.2,1.2-1.2,3.1,0,4.2L116.8,61H11.2l14.9-14.9c1.2-1.2,1.2-3.1,0-4.2	c-1.2-1.2-3.1-1.2-4.2,0l-20,20c-1.2,1.2-1.2,3.1,0,4.2l20,20c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9c1.2-1.2,1.2-3.1,0-4.2	L11.2,67h105.5l-14.9,14.9c-1.2,1.2-1.2,3.1,0,4.2c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9l20-20c1.2-1.2,1.2-3.1,0-4.2L106.1,41.9	z" />
+                    <!-- ...existing SVG content... -->
                 </svg>
             </span>
             <div class="mil-more-text">More</div>
-            <div class="mil-choose-text">Сhoose</div>
+            <div class="mil-choose-text">Choos</div>
         </div>
         <!-- cursor end -->
 
@@ -43,14 +192,17 @@
         <div class="mil-preloader">
             <div class="mil-preloader-animation">
                 <div class="mil-pos-abs mil-animation-1">
-                    <p class="mil-h3 mil-muted mil-thin">Pioneering</p>
-                    <p class="mil-h3 mil-muted">Creative</p>
-                    <p class="mil-h3 mil-muted mil-thin">Excellence</p>
+                    <p class="mil-h3 mil-muted mil-thin">XR Human</p>
+                    <div class="mil-dots">
+                        <div class="mil-dot"></div>
+                        <div class="mil-dot"></div>
+                        <div class="mil-dot"></div>
+                    </div>
                 </div>
                 <div class="mil-pos-abs mil-animation-2">
                     <div class="mil-reveal-frame">
                         <p class="mil-reveal-box"></p>
-                        <p class="mil-h3 mil-muted mil-thin">ashley.com</p>
+                        <p class="mil-h3 mil-muted">XR Human</p>
                     </div>
                 </div>
             </div>
@@ -67,7 +219,7 @@
         <div class="mil-menu-frame">
             <!-- frame clone -->
             <div class="mil-frame-top">
-                <a href="home-1.html" class="mil-logo">A.</a>
+                <a href="home-1.html" class="mil-logo">XR Human</a>
                 <div class="mil-menu-btn">
                     <span></span>
                 </div>
@@ -81,9 +233,9 @@
                             <nav class="mil-main-menu" id="swupMenu">
                                 <ul>
                                     <li class="mil-has-children">
-                                        <a href="#.">Homepage</a>
+                                        <a href="#.">Home</a>
                                         <ul>
-                                            <li><a href="home-1.html">Landing page</a></li>
+                                            <li><a href="home-1.html">Main</a></li>
                                             <li><a href="home-2.html">Personal</a></li>
                                             <li><a href="portfolio-3.html">Portfolio slider</a></li>
                                         </ul>
@@ -91,27 +243,27 @@
                                     <li class="mil-has-children mil-active">
                                         <a href="#.">Portfolio</a>
                                         <ul>
-                                            <li><a href="portfolio-1.html">Grid type 1</a></li>
-                                            <li><a href="portfolio-2.html">Grid type 2</a></li>
-                                            <li><a href="portfolio-3.html">Slider</a></li>
+                                            <li><a href="portfolio-1.html">VR Experiences</a></li>
+                                            <li><a href="portfolio-2.html">AR Solutions</a></li>
+                                            <li><a href="portfolio-3.html">Mixed Reality</a></li>
                                         </ul>
                                     </li>
                                     <li class="mil-has-children">
                                         <a href="#.">Services</a>
                                         <ul>
-                                            <li><a href="services.html">Services List</a></li>
-                                            <li><a href="service.html">Single service</a></li>
+                                            <li><a href="services.html">XR Development</a></li>
+                                            <li><a href="service.html">Consulting</a></li>
                                         </ul>
                                     </li>
                                     <li class="mil-has-children">
-                                        <a href="#.">Newsletter</a>
+                                        <a href="#.">Resources</a>
                                         <ul>
-                                            <li><a href="blog.html">Blog List</a></li>
-                                            <li><a href="publication.html">Publication</a></li>
+                                            <li><a href="blog.html">Blog</a></li>
+                                            <li><a href="publication.html">Guides</a></li>
                                         </ul>
                                     </li>
                                     <li class="mil-has-children">
-                                        <a href="#.">Other pages</a>
+                                        <a href="#.">About</a>
                                         <ul>
                                             <li><a href="team.html">Team</a></li>
                                             <li><a href="contact.html">Contact</a></li>
@@ -134,47 +286,51 @@
                                     <div class="row">
                                         <div class="col-lg-8 mil-mb-60">
 
-                                            <h6 class="mil-muted mil-mb-30">Projects</h6>
+                                            <h6 class="mil-muted mil-mb-30">Featured Projects</h6>
 
                                             <ul class="mil-menu-list">
-                                                <li><a href="project-1.html" class="mil-light-soft">Interior design studio</a></li>
-                                                <li><a href="project-2.html" class="mil-light-soft">Home Security Camera</a></li>
-                                                <li><a href="project-3.html" class="mil-light-soft">Kemia Honest Skincare</a></li>
-                                                <li><a href="project-4.html" class="mil-light-soft">Cascade of Lava</a></li>
-                                                <li><a href="project-5.html" class="mil-light-soft">Air Pro by Molekule</a></li>
-                                                <li><a href="project-6.html" class="mil-light-soft">Tony's Chocolonely</a></li>
+                                                <li><a href="project-1.html" class="mil-light-soft">Virtual Showroom Experience</a></li>
+                                                <li><a href="project-2.html" class="mil-light-soft">AR Training Platform</a></li>
+                                                <li><a href="project-3.html" class="mil-light-soft">Mixed Reality Collaboration</a></li>
+                                                <li><a href="project-4.html" class="mil-light-soft">VR Entertainment Hub</a></li>
+                                                <li><a href="project-5.html" class="mil-light-soft">AR Marketing Campaign</a></li>
+                                                <li><a href="project-6.html" class="mil-light-soft">VR Education Platform</a></li>
                                             </ul>
 
                                         </div>
                                         <div class="col-lg-4 mil-mb-60">
 
-                                            <h6 class="mil-muted mil-mb-30">Useful links</h6>
+                                            <h6 class="mil-muted mil-mb-30">Expertise</h6>
 
                                             <ul class="mil-menu-list">
-                                                <li><a href="#." class="mil-light-soft">Privacy Policy</a></li>
-                                                <li><a href="#." class="mil-light-soft">Terms and conditions</a></li>
-                                                <li><a href="#." class="mil-light-soft">Cookie Policy</a></li>
-                                                <li><a href="#." class="mil-light-soft">Careers</a></li>
+                                                <li><a href="#." class="mil-light-soft">Unity Development</a></li>
+                                                <li><a href="#." class="mil-light-soft">Unreal Engine</a></li>
+                                                <li><a href="#." class="mil-light-soft">WebXR</a></li>
+                                                <li><a href="#." class="mil-light-soft">3D Modeling</a></li>
                                             </ul>
 
                                         </div>
                                     </div>
                                     <div class="mil-divider mil-mb-60"></div>
                                     <div class="row justify-content-between">
-
                                         <div class="col-lg-4 mil-mb-60">
-
-                                            <h6 class="mil-muted mil-mb-30">Canada</h6>
-
-                                            <p class="mil-light-soft mil-up">71 South Los Carneros Road, California <span class="mil-no-wrap">+51 174 705 812</span></p>
-
+                                            <h6 class="mil-muted mil-mb-30"
+                                                style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">Düsseldorf, Germany
+                                            </h6>
+                                            <p class="mil-light-soft mil-up"
+                                                style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">Königsallee 106,
+                                                40215 Düsseldorf <span class="mil-no-wrap">+49 211 123 4567</span></p>
                                         </div>
-                                        <div class="col-lg-4 mil-mb-60">
-
-                                            <h6 class="mil-muted mil-mb-30">Germany</h6>
-
-                                            <p class="mil-light-soft">Leehove 40, 2678 MC De Lier, Netherlands <span class="mil-no-wrap">+31 174 705 811</span></p>
-
+                                        <div class="col-lg-7 mil-mb-60">
+                                            <div class="mil-social-frame">
+                                                <!-- <h6 class="mil-muted mil-mb-30">Follow Us</h6> -->
+                                                <!-- <ul class="mil-social-icons mil-center">
+                                                                                                                                                                                                                    <li><a href="#." class="social-icon"> <i class="fab fa-linkedin"></i></a></li>
+                                                                                                                                                                                                                    <li><a href="#." class="social-icon"> <i class="fab fa-twitter"></i></a></li>
+                                                                                                                                                                                                                    <li><a href="#." class="social-icon"> <i class="fab fa-instagram"></i></a></li>
+                                                                                                                                                                                                                    <li><a href="#." class="social-icon"> <i class="fab fa-github"></i></a></li>
+                                                                                                                                                                                                                </ul> -->
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -194,7 +350,7 @@
         <!-- frame -->
         <div class="mil-frame">
             <div class="mil-frame-top">
-                <a href="home-1.html" class="mil-logo">A.</a>
+                <a href="home-1.html" class="mil-logo">XR Human</a>
                 <div class="mil-menu-btn">
                     <span></span>
                 </div>
@@ -215,28 +371,104 @@
             <div id="swupMain" class="mil-main-transition">
 
                 <!-- banner -->
-                <div class="mil-inner-banner">
-                    <div class="mil-banner-content mil-up">
+                <section class="mil-banner xr-gradient-bg">
+                    <div class="mi-invert-fix">
                         <div class="mil-animation-frame">
-                            <div class="mil-animation mil-position-4 mil-dark mil-scale" data-value-1="6" data-value-2="1.4"></div>
+                            <div class="mil-animation mil-position-1 mil-scale" data-value-1="7" data-value-2="1.6"></div>
+                            <div class="mil-animation mil-position-2 mil-scale" data-value-1="4" data-value-2="1"></div>
+                            <div class="mil-animation mil-position-3 mil-scale" data-value-1="1.2" data-value-2=".1"></div>
                         </div>
+
                         <div class="container">
-                            <ul class="mil-breadcrumbs mil-mb-60">
-                                <li><a href="home-1.html">Homepage</a></li>
-                                <li><a href="portfolio-1.html">Portfolio</a></li>
-                            </ul>
-                            <h1 class="mil-mb-60">Designing a <br> Better <span class="mil-thin">World Today</span></h1>
-                            <a href="#portfolio" class="mil-link mil-dark mil-arrow-place mil-down-arrow">
-                                <span>Our works</span>
-                            </a>
+                            <div class="mil-banner-content mil-up">
+                                <!-- Navigation breadcrumbs -->
+                                <div class="row mil-mb-30">
+                                    <div class="col-12">
+                                        <ul class="mil-breadcrumbs mil-dark mil-mb-30">
+                                            <li><a href="home-1.html">Home</a></li>
+                                            <li><a href="portfolio-1.html">VR Portfolio</a></li>
+                                        </ul>
+                                    </div>
+                                    </div>
+                                    
+                                    <!-- VR Icons row -->
+                                    <div class="row mil-mb-60">
+                                        <div class="col-12">
+                                            <div class="d-flex align-items-center justify-content-start gap-4">
+                                                <div class="xr-service-icon">
+                                                    <i class="fas fa-vr-cardboard"></i>
+                                                </div>
+                                                <div class="xr-service-icon">
+                                                    <i class="fas fa-gamepad"></i>
+                                                </div>
+                                                <div class="xr-service-icon">
+                                                    <i class="fas fa-headset"></i>
+                                                </div>
+                                                <div class="xr-service-icon">
+                                                    <i class="fas fa-cube"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <h1 class="mil-dark mil-mb-60">Virtual Reality <span class="xr-gradient-text">Experiences</span><br>That Redefine <span
+                                            class="xr-orange-accent">Reality</span></h1>
+                                    <p class="mil-dark mil-mb-60" style="color: var(--xr-dark) !important;">Explore our cutting-edge VR projects that push
+                                        the boundaries of immersive technology and create unforgettable experiences across industries.</p>
+                                    
+                                    <div class="mil-buttons-frame">
+                                        <a href="#portfolio" class="mil-button mil-arrow-place mil-btn-space mil-down-arrow">
+                                            <span>View VR Projects</span>
+                                        </a>
+                                        <a href="contact.html" class="mil-link mil-dark mil-arrow-place">
+                                            <span>Start Your VR Project</span>
+                                        </a>
+                                    </div>
+
+                            </div>
+                            </div>
+                    </div>
+                    </section>
+                <!-- banner end -->
+
+                <!-- portfolio overview -->
+                <section>
+                    <div class="container mil-p-120-30">
+                        <div class="row mil-mb-90">
+                            <div class="col-lg-6 col-xl-7">
+                                <div class="mil-section-title-frame mil-mb-30">
+                                    <div class="xr-service-icon mil-mb-30">
+                                        <i class="fas fa-vr-cardboard"></i>
+                                    </div>
+                                    <h2 class="mil-section-title mil-up">Our <span class="xr-gradient-text">VR Portfolio</span></h2>
+                                    <div class="mil-section-subtitle mil-up xr-accent-color">Immersive virtual reality experiences that
+                                        transform how people interact with digital content.</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-5">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="mil-counter-frame mil-mb-30">
+                                            <h4 class="mil-counter mil-energy mil-up" data-number="45">45</h4>
+                                            <p class="mil-dark mil-up">VR Projects</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mil-counter-frame mil-mb-30">
+                                            <h4 class="mil-counter mil-energy mil-up" data-number="12">12</h4>
+                                            <p class="mil-dark mil-up">Industries</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- banner end -->
+                </section>
+                <!-- portfolio overview end -->
 
                 <!-- portfolio -->
                 <section id="portfolio">
-                    <div class="container mil-portfolio mil-p-120-60">
+                    <div class="container mil-portfolio mil-p-0-60">
 
                         <div class="mil-lines-place"></div>
                         <div class="mil-lines-place mil-lines-long"></div>
@@ -247,15 +479,16 @@
                                 <a href="project-1.html" class="mil-portfolio-item mil-more mil-mb-60">
                                     <div class="mil-cover-frame mil-vert mil-up">
                                         <div class="mil-cover">
-                                            <img src="img/works/1.jpg" alt="cover">
+                                            <img src="img/works/1.jpg" alt="VR Training Simulation">
                                         </div>
                                     </div>
                                     <div class="mil-descr">
                                         <div class="mil-labels mil-up mil-mb-15">
-                                            <div class="mil-label mil-upper mil-accent">Branding</div>
-                                            <div class="mil-label mil-upper">may 24 2023</div>
+                                            <div class="mil-label mil-upper mil-vr">VR Training</div>
+                                            <div class="mil-label mil-upper">September 2025</div>
                                         </div>
-                                        <h4 class="mil-up">Interior design studio</h4>
+                                        <h4 class="mil-up">Industrial Safety VR Training</h4>
+                                        <p class="mil-descr-text mil-up">Immersive safety training simulation for manufacturing environments</p>
                                     </div>
                                 </a>
 
@@ -265,51 +498,54 @@
                                 <a href="project-2.html" class="mil-portfolio-item mil-more mil-parallax mil-mb-60" data-value-1="60" data-value-2="-60">
                                     <div class="mil-cover-frame mil-hori mil-up">
                                         <div class="mil-cover">
-                                            <img src="img/works/2.jpg" alt="cover">
+                                            <img src="img/works/2.jpg" alt="VR Showroom">
                                         </div>
                                     </div>
                                     <div class="mil-descr">
                                         <div class="mil-labels mil-up mil-mb-15">
-                                            <div class="mil-label mil-upper mil-accent">Design</div>
-                                            <div class="mil-label mil-upper">may 24 2023</div>
+                                            <div class="mil-label mil-upper mil-vr">VR Commerce</div>
+                                            <div class="mil-label mil-upper">August 2025</div>
                                         </div>
-                                        <h4 class="mil-up">Home Security Camera</h4>
+                                        <h4 class="mil-up">Virtual Automotive Showroom</h4>
+                                        <p class="mil-descr-text mil-up">Interactive VR experience for exploring luxury vehicles</p>
                                     </div>
                                 </a>
 
                             </div>
-                            <div class="col-lg-6">
+                            <!-- <div class="col-lg-6">
 
                                 <a href="project-3.html" class="mil-portfolio-item mil-more mil-parallax mil-mb-60" data-value-1="60" data-value-2="-60">
                                     <div class="mil-cover-frame mil-hori mil-up">
                                         <div class="mil-cover">
-                                            <img src="img/works/3.jpg" alt="cover">
+                                            <img src="img/works/3.jpg" alt="VR Education">
                                         </div>
                                     </div>
                                     <div class="mil-descr">
                                         <div class="mil-labels mil-up mil-mb-15">
-                                            <div class="mil-label mil-upper mil-accent">Design</div>
-                                            <div class="mil-label mil-upper">may 24 2023</div>
+                                            <div class="mil-label mil-upper mil-vr">VR Education</div>
+                                            <div class="mil-label mil-upper">July 2025</div>
                                         </div>
-                                        <h4 class="mil-up">Kemia Honest Skincare</h4>
+                                        <h4 class="mil-up">Ancient History VR Museum</h4>
+                                        <p class="mil-descr-text mil-up">Educational VR journey through ancient civilizations</p>
                                     </div>
                                 </a>
 
-                            </div>
+                            </div> -->
                             <div class="col-lg-5">
 
                                 <a href="project-4.html" class="mil-portfolio-item mil-more mil-mb-60">
                                     <div class="mil-cover-frame mil-vert mil-up">
                                         <div class="mil-cover">
-                                            <img src="img/works/4.jpg" alt="cover">
+                                            <img src="img/works/4.jpg" alt="VR Gaming">
                                         </div>
                                     </div>
                                     <div class="mil-descr">
                                         <div class="mil-labels mil-up mil-mb-15">
-                                            <div class="mil-label mil-upper mil-accent">Photography</div>
-                                            <div class="mil-label mil-upper">may 24 2023</div>
+                                            <div class="mil-label mil-upper mil-vr">VR Gaming</div>
+                                            <div class="mil-label mil-upper">June 2025</div>
                                         </div>
-                                        <h4 class="mil-up">Cascade of Lava</h4>
+                                        <h4 class="mil-up">Mystic Adventures VR</h4>
+                                        <p class="mil-descr-text mil-up">Fantasy adventure game with haptic feedback integration</p>
                                     </div>
                                 </a>
 
@@ -319,15 +555,16 @@
                                 <a href="project-5.html" class="mil-portfolio-item mil-more mil-mb-60">
                                     <div class="mil-cover-frame mil-vert mil-up">
                                         <div class="mil-cover">
-                                            <img src="img/works/5.jpg" alt="cover">
+                                            <img src="img/works/5.jpg" alt="VR Healthcare">
                                         </div>
                                     </div>
                                     <div class="mil-descr">
                                         <div class="mil-labels mil-up mil-mb-15">
-                                            <div class="mil-label mil-upper mil-accent">Design</div>
-                                            <div class="mil-label mil-upper">may 24 2023</div>
+                                            <div class="mil-label mil-upper mil-vr">VR Healthcare</div>
+                                            <div class="mil-label mil-upper">May 2025</div>
                                         </div>
-                                        <h4 class="mil-up">Air Pro by Molekule</h4>
+                                        <h4 class="mil-up">Medical Procedure VR Trainer</h4>
+                                        <p class="mil-descr-text mil-up">Surgical training simulation for medical professionals</p>
                                     </div>
                                 </a>
 
@@ -337,15 +574,16 @@
                                 <a href="project-6.html" class="mil-portfolio-item mil-more mil-parallax mil-mb-60" data-value-1="60" data-value-2="-60">
                                     <div class="mil-cover-frame mil-hori mil-up">
                                         <div class="mil-cover">
-                                            <img src="img/works/6.jpg" alt="cover">
+                                            <img src="img/works/6.jpg" alt="VR Architecture">
                                         </div>
                                     </div>
                                     <div class="mil-descr">
                                         <div class="mil-labels mil-up mil-mb-15">
-                                            <div class="mil-label mil-upper mil-accent">Design</div>
-                                            <div class="mil-label mil-upper">may 24 2023</div>
+                                            <div class="mil-label mil-upper mil-vr">VR Architecture</div>
+                                            <div class="mil-label mil-upper">April 2025</div>
                                         </div>
-                                        <h4 class="mil-up">Tony's Chocolonely</h4>
+                                        <h4 class="mil-up">Virtual Building Walkthrough</h4>
+                                        <p class="mil-descr-text mil-up">Immersive architectural visualization and design review</p>
                                     </div>
                                 </a>
 
@@ -355,19 +593,88 @@
                 </section>
                 <!-- portfolio end -->
 
-                <!-- call to action -->
+                <!-- technologies -->
                 <section class="mil-soft-bg">
                     <div class="container mil-p-120-120">
                         <div class="row">
-                            <div class="col-lg-10">
-
-                                <span class="mil-suptitle mil-suptitle-right mil-suptitle-dark mil-up">Looking to make your mark? We'll help you turn <br> your project into a success story.</span>
-
+                            <div class="col-lg-5">
+                                <div class="mil-mb-90">
+                                    <div class="xr-service-icon mil-mb-30">
+                                        <i class="fas fa-cogs"></i>
+                                    </div>
+                                    <span class="mil-suptitle mil-suptitle-right mil-suptitle-dark mil-up xr-accent-color">VR Development
+                                        Tools</span>
+                                    <h2 class="mil-up">Technologies Behind <span class="xr-gradient-text">Our VR Experiences</span></h2>
+                                </div>
                             </div>
-                        </div>
-                        <div class="mil-center">
-                            <h2 class="mil-up mil-mb-60">Ready to bring your <span class="mil-thin">ideas to</span> life? <br> We're <span class="mil-thin">here to help</span></h2>
-                            <div class="mil-up"><a href="contact.html" class="mil-button mil-arrow-place"><span>Contact us</span></a></div>
+                            <div class="col-lg-7 mil-mt-suptitle-offset">
+                                <div class="mil-text-frame mil-up mil-mb-60">
+                                    <p class="mil-text-lg">We utilize cutting-edge VR development platforms and tools to create immersive
+                                        experiences that deliver exceptional performance.</p>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="mil-divider mil-up mil-mb-60"></div>
+                            <div class="row mil-mb-60">
+                                <div class="col-lg-3 mil-up">
+                                    <div class="mil-technology-item mil-mb-60">
+                                        <div class="xr-service-icon">
+                                            <i class="fab fa-unity"></i>
+                                        </div>
+                                        <h4 class="xr-accent-color">Unity VR</h4>
+                                        <p class="mil-dark-soft">Cross-platform VR development</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 mil-up">
+                                    <div class="mil-technology-item mil-mb-60">
+                                        <div class="xr-service-icon">
+                                            <i class="fas fa-gamepad"></i>
+                                        </div>
+                                        <h4 class="xr-accent-color">Unreal VR</h4>
+                                        <p class="mil-dark-soft">High-fidelity VR experiences</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 mil-up">
+                                    <div class="mil-technology-item mil-mb-60">
+                                        <div class="xr-service-icon">
+                                            <i class="fas fa-headset"></i>
+                                        </div>
+                                        <h4 class="xr-accent-color">Oculus SDK</h4>
+                                        <p class="mil-dark-soft">Meta VR platform integration</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 mil-up">
+                                    <div class="mil-technology-item mil-mb-60">
+                                        <div class="xr-service-icon">
+                                            <i class="fas fa-steam"></i>
+                                        </div>
+                                        <h4 class="xr-accent-color">SteamVR</h4>
+                                        <p class="mil-dark-soft">PC VR ecosystem support</p>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            </section>
+                            <!-- technologies end -->
+
+                <!-- call to action -->
+                <section style="background: linear-gradient(90deg, #F5FBFF 0%, #E8F4FD 25%, #C8E5F7 50%, #A4D3F0 75%, #7BC3E8 100%);">
+                    <div class="container mil-p-120-120">
+                        <div class="row align-items-center">
+                            <div class="col-lg-2">
+                                <div class="xr-service-icon">
+                                    <i class="fas fa-vr-cardboard"></i>
+                                </div>
+                                </div>
+                            <div class="col-lg-7">
+                                <h2 class="mil-up mil-mb-60">Ready to create your own <span class="xr-orange-accent">VR experience?</span> <br>
+                                    Let's build something <span class="xr-gradient-text">extraordinary</span></h2>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="mil-adaptive-right mil-up">
+                                    <a href="contact.html" class="mil-button mil-arrow-place"><span>Start VR Project</span></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -380,12 +687,12 @@
                             <div class="row justify-content-between">
                                 <div class="col-md-4 col-lg-4 mil-mb-60">
 
-                                    <div class="mil-muted mil-logo mil-up mil-mb-30">Ashley.</div>
+                                    <div class="mil-muted mil-logo mil-up mil-mb-30">XR Human</div>
 
-                                    <p class="mil-light-soft mil-up mil-mb-30">Subscribe our newsletter:</p>
+                                    <p class="mil-light-soft mil-up mil-mb-30">Subscribe to our newsletter for the latest VR insights:</p>
 
                                     <form class="mil-subscribe-form mil-up">
-                                        <input type="text" placeholder="Enter our email">
+                                        <input type="text" placeholder="Enter your email">
                                         <button type="submit" class="mil-button mil-icon-button-sm mil-arrow-place"></button>
                                     </form>
 
@@ -396,10 +703,10 @@
 
                                             <nav class="mil-footer-menu mil-mb-60">
                                                 <ul>
-                                                    <li class="mil-up mil-active">
+                                                    <li class="mil-up">
                                                         <a href="home-1.html">Home</a>
                                                     </li>
-                                                    <li class="mil-up">
+                                                    <li class="mil-up mil-active">
                                                         <a href="portfolio-1.html">Portfolio</a>
                                                     </li>
                                                     <li class="mil-up">
@@ -436,33 +743,33 @@
 
                                         <div class="col-md-6 col-lg-5 mil-mb-60">
 
-                                            <h6 class="mil-muted mil-up mil-mb-30">Canada</h6>
+                                            <h6 class="mil-muted mil-up mil-mb-30">Düsseldorf, Germany</h6>
 
-                                            <p class="mil-light-soft mil-up">71 South Los Carneros Road, California <span class="mil-no-wrap">+51 174 705 812</span></p>
+                                            <p class="mil-light-soft mil-up">XXXXX Düsseldorf <span class="mil-no-wrap">+49 XXXX</span></p>
 
                                         </div>
                                         <div class="col-md-6 col-lg-5 mil-mb-60">
 
-                                            <h6 class="mil-muted mil-up mil-mb-30">Germany</h6>
+                                            <h6 class="mil-muted mil-up mil-mb-30">Remote Services</h6>
 
-                                            <p class="mil-light-soft mil-up">Leehove 40, 2678 MC De Lier, Netherlands <span class="mil-no-wrap">+31 174 705 811</span></p>
+                                            <p class="mil-light-soft mil-up">Global VR solutions <span class="mil-no-wrap">hello@xrhuman.com</span></p>
 
                                         </div>
                                     </div>
 
                                 </div>
-                                <div class="col-md-4 col-lg-6 mil-mb-60">
+                                <div class="col-md-5 col-lg-6">
 
                                     <div class="mil-vert-between">
-                                        <div class="mil-mb-30">
+                                        <!-- <div class="mil-mb-60">
                                             <ul class="mil-social-icons mil-up">
-                                                <li><a href="#." target="_blank" class="social-icon"> <i class="far fa-circle"></i></a></li>
-                                                <li><a href="#." target="_blank" class="social-icon"> <i class="far fa-circle"></i></a></li>
-                                                <li><a href="#." target="_blank" class="social-icon"> <i class="far fa-circle"></i></a></li>
-                                                <li><a href="#." target="_blank" class="social-icon"> <i class="far fa-circle"></i></a></li>
+                                                <li><a href="#." class="social-icon" title="LinkedIn">LinkedIn</a></li>
+                                                <li><a href="#." class="social-icon" title="Twitter">Twitter</a></li>
+                                                <li><a href="#." class="social-icon" title="Instagram">Instagram</a></li>
+                                                <li><a href="#." class="social-icon" title="GitHub">GitHub</a></li>
                                             </ul>
-                                        </div>
-                                        <p class="mil-light-soft mil-up">© Copyright 2023 - Mil. All Rights Reserved.</p>
+                                        </div> -->
+                                        <p class="mil-light-soft mil-up">© Copyright 2025 - XR Human. All Rights Reserved.</p>
                                     </div>
 
                                 </div>
@@ -584,7 +891,7 @@
     </div>
     <!-- wrapper end -->
 
-    <!-- jQuery js -->
+    <!-- jquery js -->
     <script src="js/plugins/jquery.min.js"></script>
     <!-- swup js -->
     <script src="js/plugins/swup.min.js"></script>
@@ -595,10 +902,10 @@
     <!-- gsap js -->
     <script src="js/plugins/gsap.min.js"></script>
     <!-- scroll smoother -->
-    <script src="js/plugins/smooth-scroll.js"></script>
+    <script src="js/plugins/smooth-scrollbar.js"></script>
     <!-- scroll trigger js -->
     <script src="js/plugins/ScrollTrigger.min.js"></script>
-    <!-- scroll to js -->
+    <!-- scroll to plugin js -->
     <script src="js/plugins/ScrollTo.min.js"></script>
     <!-- ashley js -->
     <script src="js/main.js"></script>

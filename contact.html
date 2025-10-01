@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
 
@@ -7,18 +7,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- Google Fonts - Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <!-- bootstrap grid css -->
     <link rel="stylesheet" href="css/plugins/bootstrap-grid.css">
     <!-- font awesome css -->
     <link rel="stylesheet" href="css/plugins/font-awesome-fixed.css">
+    <!-- Font Awesome 6 for more icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <!-- swiper css -->
     <link rel="stylesheet" href="css/plugins/swiper.min.css">
     <!-- fancybox css -->
     <link rel="stylesheet" href="css/plugins/fancybox.min.css">
     <!-- ashley scss -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Custom XR Human Styles -->
+    <style>
+        :root {
+            --xr-blue-primary: #2BA5DE;
+            --xr-blue-light: #8CD7F2;
+            --xr-blue-lightest: #E6F5FC;
+            --xr-dark: #222222;
+            --xr-orange: #FF4500;
+            --xr-gray: #D6D6CF;
+        }
+    
+        * {
+            font-family: 'Manrope', sans-serif !important;
+        }
+    
+        .xr-gradient-bg {
+            background: linear-gradient(90deg, #7BC3E8 0%, #A4D3F0 25%, #C8E5F7 50%, #E8F4FD 75%, #F5FBFF 100%);
+        }
+    
+        .xr-accent-color {
+            color: var(--xr-blue-primary) !important;
+        }
+    
+        .xr-orange-accent {
+            color: var(--xr-orange) !important;
+        }
+    
+        .mil-banner {
+            background: linear-gradient(90deg, #2BA5DE 0%, #8CD7F2 50%, #E6F5FC 100%);
+        }
+    
+        .mil-button {
+            background-color: var(--xr-orange) !important;
+            border-color: var(--xr-orange) !important;
+        }
+    
+        .mil-button:hover {
+            background-color: var(--xr-blue-primary) !important;
+            border-color: var(--xr-blue-primary) !important;
+        }
+    
+        .mil-energy {
+            color: var(--xr-blue-primary) !important;
+        }
+    
+        .xr-icon {
+            width: 48px;
+            height: 48px;
+            background-color: var(--xr-blue-primary);
+            border-radius: 12px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--xr-blue-lightest);
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    
+        .xr-service-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, var(--xr-blue-primary), var(--xr-blue-light));
+            border-radius: 16px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--xr-blue-lightest);
+            font-size: 28px;
+            margin-bottom: 24px;
+        }
+    
+        .xr-gradient-text {
+            background: none !important;
+            color: #000 !important;
+            -webkit-background-clip: initial !important;
+            -webkit-text-fill-color: initial !important;
+            background-clip: initial !important;
+        }
+    
+        /* Contact form styling */
+        .mil-contact-form {
+            background: rgba(43, 165, 222, 0.05);
+            border-radius: 20px;
+            padding: 40px;
+            border: 1px solid rgba(43, 165, 222, 0.1);
+        }
+    
+        .mil-contact-form input,
+        .mil-contact-form textarea {
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(43, 165, 222, 0.2);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+    
+        .mil-contact-form input:focus,
+        .mil-contact-form textarea:focus {
+            border-color: var(--xr-blue-primary);
+            box-shadow: 0 0 0 3px rgba(43, 165, 222, 0.1);
+        }
+    
+        /* Map frame styling */
+        .mil-map-frame {
+            border-radius: 20px;
+            overflow: hidden;
+            border: 3px solid var(--xr-blue-primary);
+        }
+    
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+    
+            .xr-icon,
+            .xr-service-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+            }
+    
+            .mil-banner h1 {
+                font-size: 2.5rem !important;
+            }
+    
+            .mil-contact-form {
+                padding: 20px;
+            }
+        }
+    
+        /* Animation for icons */
+        .xr-icon,
+        .xr-service-icon {
+            transition: all 0.3s ease;
+        }
+    
+        .xr-icon:hover,
+        .xr-service-icon:hover {
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 10px 25px var(--xr-gray);
+        }
+    
+        /* Enhanced gradient backgrounds */
+        .mil-soft-bg {
+            background: linear-gradient(135deg, var(--xr-blue-lightest) 0%, var(--xr-gray) 100%) !important;
+        }
+    </style>
     <!-- page name -->
-    <title>Ashley</title>
+    <title>XR Human - Contact Us</title>
 
 </head>
 
@@ -31,31 +183,13 @@
         <div class="mil-ball">
             <span class="mil-icon-1">
                 <svg viewBox="0 0 128 128">
-                    <path d="M106.1,41.9c-1.2-1.2-3.1-1.2-4.2,0c-1.2,1.2-1.2,3.1,0,4.2L116.8,61H11.2l14.9-14.9c1.2-1.2,1.2-3.1,0-4.2	c-1.2-1.2-3.1-1.2-4.2,0l-20,20c-1.2,1.2-1.2,3.1,0,4.2l20,20c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9c1.2-1.2,1.2-3.1,0-4.2	L11.2,67h105.5l-14.9,14.9c-1.2,1.2-1.2,3.1,0,4.2c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9l20-20c1.2-1.2,1.2-3.1,0-4.2L106.1,41.9	z" />
+                    <!-- ...existing SVG content... -->
                 </svg>
             </span>
             <div class="mil-more-text">More</div>
-            <div class="mil-choose-text">Сhoose</div>
+            <div class="mil-choose-text">Choos</div>
         </div>
         <!-- cursor end -->
-
-        <!-- preloader -->
-        <div class="mil-preloader">
-            <div class="mil-preloader-animation">
-                <div class="mil-pos-abs mil-animation-1">
-                    <p class="mil-h3 mil-muted mil-thin">Pioneering</p>
-                    <p class="mil-h3 mil-muted">Creative</p>
-                    <p class="mil-h3 mil-muted mil-thin">Excellence</p>
-                </div>
-                <div class="mil-pos-abs mil-animation-2">
-                    <div class="mil-reveal-frame">
-                        <p class="mil-reveal-box"></p>
-                        <p class="mil-h3 mil-muted mil-thin">ashley.com</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- preloader end -->
 
         <!-- scrollbar progress -->
         <div class="mil-progress-track">
@@ -67,7 +201,7 @@
         <div class="mil-menu-frame">
             <!-- frame clone -->
             <div class="mil-frame-top">
-                <a href="home-1.html" class="mil-logo">A.</a>
+                <a href="home-1.html" class="mil-logo">XR Human</a>
                 <div class="mil-menu-btn">
                     <span></span>
                 </div>
@@ -81,9 +215,9 @@
                             <nav class="mil-main-menu" id="swupMenu">
                                 <ul>
                                     <li class="mil-has-children">
-                                        <a href="#.">Homepage</a>
+                                        <a href="#.">Home</a>
                                         <ul>
-                                            <li><a href="home-1.html">Landing page</a></li>
+                                            <li><a href="home-1.html">Main</a></li>
                                             <li><a href="home-2.html">Personal</a></li>
                                             <li><a href="portfolio-3.html">Portfolio slider</a></li>
                                         </ul>
@@ -91,27 +225,27 @@
                                     <li class="mil-has-children">
                                         <a href="#.">Portfolio</a>
                                         <ul>
-                                            <li><a href="portfolio-1.html">Grid type 1</a></li>
-                                            <li><a href="portfolio-2.html">Grid type 2</a></li>
-                                            <li><a href="portfolio-3.html">Slider</a></li>
+                                            <li><a href="portfolio-1.html">VR Experiences</a></li>
+                                            <li><a href="portfolio-2.html">AR Solutions</a></li>
+                                            <li><a href="portfolio-3.html">Mixed Reality</a></li>
                                         </ul>
                                     </li>
                                     <li class="mil-has-children">
                                         <a href="#.">Services</a>
                                         <ul>
-                                            <li><a href="services.html">Services List</a></li>
-                                            <li><a href="service.html">Single service</a></li>
+                                            <li><a href="services.html">XR Development</a></li>
+                                            <li><a href="service.html">Consulting</a></li>
                                         </ul>
                                     </li>
                                     <li class="mil-has-children">
-                                        <a href="#.">Newsletter</a>
+                                        <a href="#.">Resources</a>
                                         <ul>
-                                            <li><a href="blog.html">Blog List</a></li>
-                                            <li><a href="publication.html">Publication</a></li>
+                                            <li><a href="blog.html">Blog</a></li>
+                                            <li><a href="publication.html">Guides</a></li>
                                         </ul>
                                     </li>
                                     <li class="mil-has-children mil-active">
-                                        <a href="#.">Other pages</a>
+                                        <a href="#.">About</a>
                                         <ul>
                                             <li><a href="team.html">Team</a></li>
                                             <li><a href="contact.html">Contact</a></li>
@@ -134,47 +268,51 @@
                                     <div class="row">
                                         <div class="col-lg-8 mil-mb-60">
 
-                                            <h6 class="mil-muted mil-mb-30">Projects</h6>
+                                            <h6 class="mil-muted mil-mb-30">Featured Projects</h6>
 
                                             <ul class="mil-menu-list">
-                                                <li><a href="project-1.html" class="mil-light-soft">Interior design studio</a></li>
-                                                <li><a href="project-2.html" class="mil-light-soft">Home Security Camera</a></li>
-                                                <li><a href="project-3.html" class="mil-light-soft">Kemia Honest Skincare</a></li>
-                                                <li><a href="project-4.html" class="mil-light-soft">Cascade of Lava</a></li>
-                                                <li><a href="project-5.html" class="mil-light-soft">Air Pro by Molekule</a></li>
-                                                <li><a href="project-6.html" class="mil-light-soft">Tony's Chocolonely</a></li>
+                                                <li><a href="project-1.html" class="mil-light-soft">Virtual Showroom Experience</a></li>
+                                                <li><a href="project-2.html" class="mil-light-soft">AR Training Platform</a></li>
+                                                <li><a href="project-3.html" class="mil-light-soft">Mixed Reality Collaboration</a></li>
+                                                <li><a href="project-4.html" class="mil-light-soft">VR Entertainment Hub</a></li>
+                                                <li><a href="project-5.html" class="mil-light-soft">AR Marketing Campaign</a></li>
+                                                <li><a href="project-6.html" class="mil-light-soft">VR Education Platform</a></li>
                                             </ul>
 
                                         </div>
                                         <div class="col-lg-4 mil-mb-60">
 
-                                            <h6 class="mil-muted mil-mb-30">Useful links</h6>
+                                            <h6 class="mil-muted mil-mb-30">Expertise</h6>
 
                                             <ul class="mil-menu-list">
-                                                <li><a href="#." class="mil-light-soft">Privacy Policy</a></li>
-                                                <li><a href="#." class="mil-light-soft">Terms and conditions</a></li>
-                                                <li><a href="#." class="mil-light-soft">Cookie Policy</a></li>
-                                                <li><a href="#." class="mil-light-soft">Careers</a></li>
+                                                <li><a href="#." class="mil-light-soft">Unity Development</a></li>
+                                                <li><a href="#." class="mil-light-soft">Unreal Engine</a></li>
+                                                <li><a href="#." class="mil-light-soft">WebXR</a></li>
+                                                <li><a href="#." class="mil-light-soft">3D Modeling</a></li>
                                             </ul>
 
                                         </div>
                                     </div>
                                     <div class="mil-divider mil-mb-60"></div>
                                     <div class="row justify-content-between">
-
                                         <div class="col-lg-4 mil-mb-60">
-
-                                            <h6 class="mil-muted mil-mb-30">Canada</h6>
-
-                                            <p class="mil-light-soft mil-up">71 South Los Carneros Road, California <span class="mil-no-wrap">+51 174 705 812</span></p>
-
+                                            <h6 class="mil-muted mil-mb-30"
+                                                style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">Düsseldorf, Germany
+                                            </h6>
+                                            <p class="mil-light-soft mil-up"
+                                                style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">Königsallee 106,
+                                                40215 Düsseldorf <span class="mil-no-wrap">+49 211 123 4567</span></p>
                                         </div>
-                                        <div class="col-lg-4 mil-mb-60">
-
-                                            <h6 class="mil-muted mil-mb-30">Germany</h6>
-
-                                            <p class="mil-light-soft">Leehove 40, 2678 MC De Lier, Netherlands <span class="mil-no-wrap">+31 174 705 811</span></p>
-
+                                        <div class="col-lg-7 mil-mb-60">
+                                            <div class="mil-social-frame">
+                                                <!-- <h6 class="mil-muted mil-mb-30">Follow Us</h6> -->
+                                                <!-- <ul class="mil-social-icons mil-center">
+                                                                                                                                                                            <li><a href="#." class="social-icon"> <i class="fab fa-linkedin"></i></a></li>
+                                                                                                                                                                            <li><a href="#." class="social-icon"> <i class="fab fa-twitter"></i></a></li>
+                                                                                                                                                                            <li><a href="#." class="social-icon"> <i class="fab fa-instagram"></i></a></li>
+                                                                                                                                                                            <li><a href="#." class="social-icon"> <i class="fab fa-github"></i></a></li>
+                                                                                                                                                                        </ul> -->
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -194,7 +332,7 @@
         <!-- frame -->
         <div class="mil-frame">
             <div class="mil-frame-top">
-                <a href="home-1.html" class="mil-logo">A.</a>
+                <a href="home-1.html" class="mil-logo">XR Human</a>
                 <div class="mil-menu-btn">
                     <span></span>
                 </div>
@@ -215,159 +353,174 @@
             <div id="swupMain" class="mil-main-transition">
 
                 <!-- banner -->
-                <div class="mil-inner-banner mil-p-0-120">
-                    <div class="mil-banner-content mil-center mil-up">
+                <section class="mil-banner xr-gradient-bg">
+                    <div class="mi-invert-fix">
+                        <div class="mil-animation-frame">
+                            <div class="mil-animation mil-position-1 mil-scale" data-value-1="7" data-value-2="1.6"></div>
+                            <div class="mil-animation mil-position-2 mil-scale" data-value-1="4" data-value-2="1"></div>
+                            <div class="mil-animation mil-position-3 mil-scale" data-value-1="1.2" data-value-2=".1"></div>
+                        </div>
+
                         <div class="container">
-                            <ul class="mil-breadcrumbs mil-center mil-mb-60">
-                                <li><a href="home-1.html">Homepage</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                            <h1 class="mil-mb-60">Get in touch!</h1>
-                            <a href="#contact" class="mil-link mil-dark mil-arrow-place mil-down-arrow">
-                                <span>Send message</span>
-                            </a>
+                            <div class="mil-banner-content mil-up">
+                                <!-- Navigation breadcrumbs -->
+                                <div class="row mil-mb-30">
+                                    <div class="col-12">
+                                        <ul class="mil-breadcrumbs mil-dark mil-mb-30">
+                                            <li><a href="home-1.html">Home</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                    </div>
+                                    
+                                    <!-- Contact Icons row -->
+                                    <div class="row mil-mb-60">
+                                        <div class="col-12">
+                                            <div class="d-flex align-items-center justify-content-start gap-4">
+                                                <div class="xr-service-icon">
+                                                    <i class="fas fa-envelope"></i>
+                                                </div>
+                                                <div class="xr-service-icon">
+                                                    <i class="fas fa-phone"></i>
+                                                </div>
+                                                <div class="xr-service-icon">
+                                                    <i class="fas fa-map-marker-alt"></i>
+                                                </div>
+                                                <div class="xr-service-icon">
+                                                    <i class="fas fa-handshake"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <h1 class="mil-dark mil-mb-60">Let's Build the Future of <span class="xr-gradient-text">Extended
+                                            Reality</span><br>Together</h1>
+                                    <p class="mil-dark mil-mb-60" style="color: var(--xr-dark) !important;">Ready to transform your ideas into immersive XR
+                                        experiences? Get in touch with our team of experts and let's discuss your next project.</p>
+                                    
+                                    <div class="mil-buttons-frame">
+                                        <a href="#contact" class="mil-button mil-arrow-place mil-btn-space mil-down-arrow">
+                                            <span>Start Conversation</span>
+                                        </a>
+                                        <a href="portfolio-1.html" class="mil-link mil-dark mil-arrow-place">
+                                            <span>View Our Work</span>
+                                        </a>
+                                    </div>
+
+                            </div>
+                            </div>
+                    </div>
+                    </section>
+                <!-- banner end -->
+
+                <!-- contact info -->
+                <section>
+                    <div class="container mil-p-120-30">
+                        <div class="row mil-mb-90">
+                            <div class="col-lg-4">
+                                <div class="mil-contact-info-item mil-mb-60">
+                                    <div class="xr-service-icon mil-mb-30">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <h4 class="mil-up mil-mb-15 xr-accent-color">Our Location</h4>
+                                    <p class="mil-up">Düsseldorf, Germany<br>Königsallee 106<br>40215 Düsseldorf</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="mil-contact-info-item mil-mb-60">
+                                    <div class="xr-service-icon mil-mb-30">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <h4 class="mil-up mil-mb-15 xr-accent-color">Email Us</h4>
+                                    <p class="mil-up">hello@xrhuman.com<br>projects@xrhuman.com<br>careers@xrhuman.com</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="mil-contact-info-item mil-mb-60">
+                                    <div class="xr-service-icon mil-mb-30">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <h4 class="mil-up mil-mb-15 xr-accent-color">Call Us</h4>
+                                    <p class="mil-up">+49 211 123 4567<br>Mon - Fri: 9:00 - 18:00<br>CET Time Zone</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- banner end -->
+                </section>
+                <!-- contact info end -->
 
                 <!-- map -->
                 <div class="mil-map-frame mil-up">
                     <div class="mil-map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1396.5769090312324!2d-73.6519672!3d45.5673453!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91f8abc30e0ff%3A0xfc6d9cbb49022e9c!2sManoir%20Saint-Joseph!5e0!3m2!1sen!2sua!4v1685485811069!5m2!1sen!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2499.6856444952103!2d6.773456315652598!3d51.22172307958708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8ca7c67e0095b%3A0x1b0f3eef4e4b2f8d!2sK%C3%B6nigsallee%2C%20D%C3%BCsseldorf%2C%20Germany!5e0!3m2!1sen!2s!4v1696176254789!5m2!1sen!2s"
+                            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
                 <!-- map end -->
 
                 <!-- contact form -->
-                <section id="contact">
+                <section id="contact" class="mil-soft-bg">
                     <div class="container mil-p-120-90">
-                        <h3 class="mil-center mil-up mil-mb-120">Let's <span class="mil-thin">Talk</span></h3>
-                        <form class="row align-items-center">
-                            <div class="col-lg-6 mil-up">
-                                <input type="text" placeholder="What's your name">
-                            </div>
-                            <div class="col-lg-6 mil-up">
-                                <input type="email" placeholder="Your Email">
-                            </div>
-                            <div class="col-lg-12 mil-up">
-                                <textarea placeholder="Tell us about our project"></textarea>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-2">
+                                <div class="xr-service-icon" style="margin: 0 auto 30px;">
+                                    <i class="fas fa-comments"></i>
+                                </div>
                             </div>
                             <div class="col-lg-8">
-                                <p class="mil-up mil-mb-30"><span class="mil-accent">*</span> We promise not to disclose your personal information to third parties.</p>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="mil-adaptive-right mil-up mil-mb-30">
-                                    <button type="submit" class="mil-button mil-arrow-place">
-                                        <span>Send message</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </section>
-                <!-- contact form end -->
-
-                <!-- footer -->
-                <footer class="mil-dark-bg">
-                    <div class="mi-invert-fix">
-                        <div class="container mil-p-120-60">
-                            <div class="row justify-content-between">
-                                <div class="col-md-4 col-lg-4 mil-mb-60">
-
-                                    <div class="mil-muted mil-logo mil-up mil-mb-30">Ashley.</div>
-
-                                    <p class="mil-light-soft mil-up mil-mb-30">Subscribe our newsletter:</p>
-
-                                    <form class="mil-subscribe-form mil-up">
-                                        <input type="text" placeholder="Enter our email">
-                                        <button type="submit" class="mil-button mil-icon-button-sm mil-arrow-place"></button>
-                                    </form>
-
-                                </div>
-                                <div class="col-md-7 col-lg-6">
-                                    <div class="row justify-content-end">
-                                        <div class="col-md-6 col-lg-7">
-
-                                            <nav class="mil-footer-menu mil-mb-60">
-                                                <ul>
-                                                    <li class="mil-up mil-active">
-                                                        <a href="home-1.html">Home</a>
-                                                    </li>
-                                                    <li class="mil-up">
-                                                        <a href="portfolio-1.html">Portfolio</a>
-                                                    </li>
-                                                    <li class="mil-up">
-                                                        <a href="services.html">Services</a>
-                                                    </li>
-                                                    <li class="mil-up">
-                                                        <a href="contact.html">Contact</a>
-                                                    </li>
-                                                    <li class="mil-up">
-                                                        <a href="blog.html">Blog</a>
-                                                    </li>
-                                                </ul>
-                                            </nav>
-
-                                        </div>
-                                        <div class="col-md-6 col-lg-5">
-
-                                            <ul class="mil-menu-list mil-up mil-mb-60">
-                                                <li><a href="#." class="mil-light-soft">Privacy Policy</a></li>
-                                                <li><a href="#." class="mil-light-soft">Terms and conditions</a></li>
-                                                <li><a href="#." class="mil-light-soft">Cookie Policy</a></li>
-                                                <li><a href="#." class="mil-light-soft">Careers</a></li>
-                                            </ul>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row justify-content-between flex-sm-row-reverse">
-                                <div class="col-md-7 col-lg-6">
-
-                                    <div class="row justify-content-between">
-
-                                        <div class="col-md-6 col-lg-5 mil-mb-60">
-
-                                            <h6 class="mil-muted mil-up mil-mb-30">Canada</h6>
-
-                                            <p class="mil-light-soft mil-up">71 South Los Carneros Road, California <span class="mil-no-wrap">+51 174 705 812</span></p>
-
-                                        </div>
-                                        <div class="col-md-6 col-lg-5 mil-mb-60">
-
-                                            <h6 class="mil-muted mil-up mil-mb-30">Germany</h6>
-
-                                            <p class="mil-light-soft mil-up">Leehove 40, 2678 MC De Lier, Netherlands <span class="mil-no-wrap">+31 174 705 811</span></p>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="col-md-4 col-lg-6 mil-mb-60">
-
-                                    <div class="mil-vert-between">
-                                        <div class="mil-mb-30">
-                                            <ul class="mil-social-icons mil-up">
-                                                <li><a href="#." target="_blank" class="social-icon"> <i class="far fa-circle"></i></a></li>
-                                                <li><a href="#." target="_blank" class="social-icon"> <i class="far fa-circle"></i></a></li>
-                                                <li><a href="#." target="_blank" class="social-icon"> <i class="far fa-circle"></i></a></li>
-                                                <li><a href="#." target="_blank" class="social-icon"> <i class="far fa-circle"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <p class="mil-light-soft mil-up">© Copyright 2023 - Mil. All Rights Reserved.</p>
-                                    </div>
-
-                                </div>
+                                <h3 class="mil-center mil-up mil-mb-30">Let's Create Something <span
+                                        class="xr-gradient-text">Extraordinary</span>
+                                </h3>
+                                <p class="mil-center mil-up mil-mb-60">Tell us about your XR vision and we'll help bring it to life with
+                                    cutting-edge technology and creative expertise.</p>
                             </div>
                         </div>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="mil-contact-form">
+                                    <form class="row align-items-center">
+                                        <div class="col-lg-6 mil-up">
+                                            <input type="text" placeholder="What's your name?" required>
+                                            </div>
+                                            <div class="col-lg-6 mil-up">
+                                            <input type="email" placeholder="Your email address" required>
+                                            </div>
+                                            <div class="col-lg-6 mil-up">
+                                                <input type="text" placeholder="Company name">
+                                            </div>
+                                            <div class="col-lg-6 mil-up">
+                                                <select required>
+                                                    <option value="">Project Type</option>
+                                                    <option value="vr">Virtual Reality Experience</option>
+                                                    <option value="ar">Augmented Reality App</option>
+                                                    <option value="mr">Mixed Reality Solution</option>
+                                                    <option value="consultation">XR Consultation</option>
+                                                    <option value="other">Other</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-12 mil-up">
+                                                <textarea placeholder="Tell us about your XR project. What's your vision? What problems are you trying to solve?"
+                                                    rows="6" required></textarea>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                <p class="mil-up mil-mb-30"><span class="xr-orange-accent">*</span> We respect your privacy and never share your
+                                                    information with third parties.</p>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="mil-adaptive-right mil-up mil-mb-30">
+                                                        <button type="submit" class="mil-button mil-arrow-place">
+                                                        <span>Start Our Journey</span>
+                                                        </button>
+                                                        </div>
+                                                        </div>
+                                                        </form>
+                                </div>
+                                </div>
+                                </div>
                     </div>
-                </footer>
-                <!-- footer end -->
-
-                <!-- hidden elements -->
+                </section>
+                <!-- contact form end --> <!-- hidden elements -->
                 <div class="mil-hidden-elements">
                     <div class="mil-dodecahedron">
                         <div class="mil-pentagon">
@@ -473,6 +626,112 @@
                 </div>
                 <!-- hidden elements end -->
 
+                <!-- footer -->
+                <footer class="mil-dark-bg">
+                    <div class="mi-invert-fix">
+                        <div class="container mil-p-120-60">
+                            <div class="row justify-content-between">
+                                <div class="col-md-4 col-lg-4 mil-mb-60">
+                
+                                    <div class="mil-muted mil-logo mil-up mil-mb-30">XR Human</div>
+                
+                                    <p class="mil-light-soft mil-up mil-mb-30">Subscribe to our newsletter for the latest XR insights:
+                                    </p>
+                
+                                    <form class="mil-subscribe-form mil-up">
+                                        <input type="text" placeholder="Enter your email">
+                                        <button type="submit" class="mil-button mil-icon-button-sm mil-arrow-place"></button>
+                                    </form>
+                
+                                </div>
+                                <div class="col-md-7 col-lg-6">
+                                    <div class="row justify-content-end">
+                                        <div class="col-md-6 col-lg-7">
+                
+                                            <nav class="mil-footer-menu mil-mb-60">
+                                                <ul>
+                                                    <li class="mil-up">
+                                                        <a href="home-1.html">Home</a>
+                                                    </li>
+                                                    <li class="mil-up">
+                                                        <a href="portfolio-1.html">Portfolio</a>
+                                                    </li>
+                                                    <li class="mil-up">
+                                                        <a href="services.html">Services</a>
+                                                    </li>
+                                                    <li class="mil-up mil-active">
+                                                        <a href="contact.html">Contact</a>
+                                                    </li>
+                                                    <li class="mil-up">
+                                                        <a href="blog.html">Blog</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                
+                                        </div>
+                                        <div class="col-md-6 col-lg-5">
+                
+                                            <ul class="mil-menu-list mil-up mil-mb-60">
+                                                <li><a href="#." class="mil-light-soft">Privacy Policy</a></li>
+                                                <li><a href="#." class="mil-light-soft">Terms and conditions</a></li>
+                                                <li><a href="#." class="mil-light-soft">Cookie Policy</a></li>
+                                                <li><a href="#." class="mil-light-soft">Careers</a></li>
+                                            </ul>
+                
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="row justify-content-between flex-sm-row-reverse">
+                                <div class="col-md-7 col-lg-6">
+                
+                                    <div class="row justify-content-between">
+                
+                                        <div class="col-md-6 col-lg-5 mil-mb-60">
+                
+                                            <h6 class="mil-muted mil-up mil-mb-30">Düsseldorf, Germany</h6>
+                
+                                            <p class="mil-light-soft mil-up">XXXXX Düsseldorf <span class="mil-no-wrap">+49 XXXX</span>
+                                            </p>
+                
+                                        </div>
+                                        <div class="col-md-6 col-lg-5 mil-mb-60">
+                
+                                            <h6 class="mil-muted mil-up mil-mb-30">Remote Services</h6>
+                
+                                            <p class="mil-light-soft mil-up">Global XR solutions <span
+                                                    class="mil-no-wrap">hello@xrhuman.com</span></p>
+                
+                                        </div>
+                                    </div>
+                
+                                </div>
+                                <div class="col-md-5 col-lg-6">
+                
+                                    <div class="mil-vert-between">
+                                        <div class="mil-mb-60">
+                                            <ul class="mil-social-icons mil-center">
+                                                <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-behance"></i></a>
+                                                </li>
+                                                <li><a href="#." target="_blank" class="social-icon"> <i
+                                                            class="fab fa-dribbble"></i></a></li>
+                                                <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-twitter"></i></a>
+                                                </li>
+                                                <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-github"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="mil-light-soft mil-up">© Copyright 2025 - XR Human. All Rights Reserved.</p>
+                                    </div>
+                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- footer end -->
+
             </div>
         </div>
         <!-- content -->
@@ -490,7 +749,7 @@
     <!-- gsap js -->
     <script src="js/plugins/gsap.min.js"></script>
     <!-- scroll smoother -->
-    <script src="js/plugins/smooth-scroll.js"></script>
+    <script src="js/plugins/smooth-scrollbar.js"></script>
     <!-- scroll trigger js -->
     <script src="js/plugins/ScrollTrigger.min.js"></script>
     <!-- scroll to js -->
