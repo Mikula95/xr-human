@@ -1,0 +1,18 @@
+/* Font Awesome Local CSS */
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  src: url("webfonts/fa-solid-900.woff2") format("woff2"),
+       url("webfonts/fa-solid-900.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+.fab {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+}
+
+.fas {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
